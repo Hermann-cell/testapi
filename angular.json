@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "a7e35f0b-d695-43a6-bf85-8b34464912ee"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -94,9 +97,16 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css",
+
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "../node_modules/jquery.easing/jquery.easing.js",
+              "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/menu/plugins/counterup/jquery.easing.js"
+            ]
           }
         },
         "lint": {
